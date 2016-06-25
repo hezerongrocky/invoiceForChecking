@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Nb-TR-wos">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--发票通-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZPx-62-uhc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6N-fu-bsg">
+                                <rect key="frame" x="0.0" y="64" width="320" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugb-mm-L1c">
+                                        <rect key="frame" x="45" y="15" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="s0q-Nc-LQ1"/>
+                                            <constraint firstAttribute="width" constant="60" id="uqf-ap-Siv"/>
+                                        </constraints>
+                                        <state key="normal" image="mticket"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwG-hs-pOs">
+                                        <rect key="frame" x="215" y="15" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="DvS-8m-ReC"/>
+                                            <constraint firstAttribute="height" constant="60" id="hzJ-o3-W3e"/>
+                                        </constraints>
+                                        <state key="normal" image="ticktcount"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的发票" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iK5-Nk-9qC">
+                                        <rect key="frame" x="47" y="83" width="56" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.87511499609999999" blue="0.1623147392" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发票记账" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqP-Gb-QiS">
+                                        <rect key="frame" x="217" y="81" width="56" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.4728109596103186" green="0.83545628198680533" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fqP-Gb-QiS" firstAttribute="top" secondItem="qwG-hs-pOs" secondAttribute="bottom" constant="6" id="Sb4-ew-nm7"/>
+                                    <constraint firstItem="ugb-mm-L1c" firstAttribute="top" secondItem="m6N-fu-bsg" secondAttribute="top" constant="15" id="cEp-ed-uLq"/>
+                                    <constraint firstItem="fqP-Gb-QiS" firstAttribute="centerX" secondItem="qwG-hs-pOs" secondAttribute="centerX" id="gwO-k3-dCS"/>
+                                    <constraint firstAttribute="height" constant="130" id="hzd-ZH-ARh"/>
+                                    <constraint firstItem="iK5-Nk-9qC" firstAttribute="centerX" secondItem="ugb-mm-L1c" secondAttribute="centerX" id="m9j-fX-R0y"/>
+                                    <constraint firstItem="qwG-hs-pOs" firstAttribute="top" secondItem="m6N-fu-bsg" secondAttribute="top" constant="15" id="o7v-oe-wpH"/>
+                                    <constraint firstItem="iK5-Nk-9qC" firstAttribute="top" secondItem="ugb-mm-L1c" secondAttribute="bottom" constant="8" id="sbJ-JR-xWj"/>
+                                    <constraint firstItem="ugb-mm-L1c" firstAttribute="leading" secondItem="m6N-fu-bsg" secondAttribute="leading" constant="45" id="vM3-vQ-G7C"/>
+                                    <constraint firstAttribute="trailing" secondItem="qwG-hs-pOs" secondAttribute="trailing" constant="45" id="xjx-J2-O6p"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZPx-62-uhc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0hg-2T-eA7"/>
+                            <constraint firstItem="ZPx-62-uhc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="Bhs-Eq-ZhG"/>
+                            <constraint firstAttribute="trailing" secondItem="m6N-fu-bsg" secondAttribute="trailing" id="Iy6-fw-Hq6"/>
+                            <constraint firstItem="m6N-fu-bsg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UD6-gx-hYa"/>
+                            <constraint firstItem="m6N-fu-bsg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="cwp-OI-f8y"/>
+                            <constraint firstAttribute="trailing" secondItem="ZPx-62-uhc" secondAttribute="trailing" id="eas-2d-0wL"/>
+                            <constraint firstAttribute="bottom" secondItem="ZPx-62-uhc" secondAttribute="bottom" id="hTb-cL-18g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="发票通" id="U8I-ku-1hL">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="ZMs-MK-ikr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AEc-C1-2tD">
+                                <rect key="frame" x="16" y="11" width="92" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="点我签到" image="signed">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="cy0-uq-fph">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="Gve-Cz-aCw">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="操作指引">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="279"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xjb-B0-xwc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Nb-TR-wos" customClass="NavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PCT-3X-HOF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bfb-Ge-wAF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0s7-u1-G2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mticket" width="60" height="60"/>
+        <image name="signed" width="20" height="18"/>
+        <image name="ticktcount" width="60" height="60"/>
+    </resources>
+</document>
